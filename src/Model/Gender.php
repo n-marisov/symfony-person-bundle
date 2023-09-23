@@ -9,5 +9,4 @@ enum Gender implements GenderInterface
     case MAN;
     case GIRL;
     case UNKNOWN;
-
 }

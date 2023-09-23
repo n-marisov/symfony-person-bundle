@@ -1,0 +1,30 @@
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                          https://symfony.com/schema/dic/doctrine/doctrine-1.0.xsd">
+
+    <!-- Модель персоны -->
+    <entity name="Maris\Symfony\Person\Entity\Person" table="persons" inheritance-type="SINGLE_TABLE" >
+
+        <discriminator-column name="gender" type="string" length="7"/>
+
+        <discriminator-map>
+            <discriminator-mapping value="UNKNOWN" class="Maris\Symfony\Person\Entity\Person"/>
+            <discriminator-mapping value="GIRL" class="Maris\Symfony\Person\Entity\Girl"/>
+            <discriminator-mapping value="MAN" class="Maris\Symfony\Person\Entity\Man"/>
+        </discriminator-map>
+
+        <id name="id" type="integer" column="id">
+            <generator/>
+            <options>
+                <option name="unsigned">true</option>
+            </options>
+        </id>
+
+        <field name="surname" />
+        <field name="firstname" />
+        <field name="patronymic" />
+        <field name="birthDate" column="birth" type="date_immutable"/>
+    </entity>
+
+</doctrine-mapping>

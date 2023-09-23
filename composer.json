@@ -1,0 +1,28 @@
+{
+  "name": "maris/symfony-person-bundle",
+  "description": "Пакет для добавления персоны человека.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Марисов Николай Андреевич",
+      "email": "marisov123456789@mail.ru"
+    }
+  ],
+  "require": {
+    "php": ">=8.1",
+    "ext-json": "*",
+    "symfony/config": "^6.0",
+    "symfony/dependency-injection": "^6.0",
+    "doctrine/orm": "^2.0",
+    "doctrine/doctrine-bundle": "^2.8",
+    "maris/person-interfaces": "dev-master",
+    "symfony/form": "6.2.*",
+    "twig/extra-bundle": "^2.12|^3.0",
+    "twig/twig": "^2.12|^3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Maris\\Symfony\\Person\\": "src/"
+    }
+  }
+}

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7c3b57302a16470529daf30307b38a45",
+    "content-hash": "5289092a4cac81ab8b221328496f3ae4",
     "packages": [
         {
             "name": "doctrine/cache",
@@ -1135,22 +1135,21 @@
         },
         {
             "name": "maris/person-interfaces",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/n-marisov/person-interfaces.git",
-                "reference": "3209625724c0d1a71c222a2e4748c3f4feec4f95"
+                "reference": "b5edd8bffebff4ab5e8704c3fe1643a73b6dcf49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/n-marisov/person-interfaces/zipball/3209625724c0d1a71c222a2e4748c3f4feec4f95",
-                "reference": "3209625724c0d1a71c222a2e4748c3f4feec4f95",
+                "url": "https://api.github.com/repos/n-marisov/person-interfaces/zipball/b5edd8bffebff4ab5e8704c3fe1643a73b6dcf49",
+                "reference": "b5edd8bffebff4ab5e8704c3fe1643a73b6dcf49",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.1"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -1170,9 +1169,9 @@
             "description": "Коллекция интерфейсов для пользователя.",
             "support": {
                 "issues": "https://github.com/n-marisov/person-interfaces/issues",
-                "source": "https://github.com/n-marisov/person-interfaces/tree/master"
+                "source": "https://github.com/n-marisov/person-interfaces/tree/v1.0.0"
             },
-            "time": "2023-09-23T05:29:25+00:00"
+            "time": "2023-09-23T06:41:51+00:00"
         },
         {
             "name": "psr/cache",
@@ -4493,9 +4492,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "maris/person-interfaces": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

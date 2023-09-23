@@ -2,7 +2,8 @@
   "name": "maris/symfony-person-bundle",
   "description": "Пакет для добавления персоны человека.",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "minimum-stability": "stable",
   "authors": [
     {
       "name": "Марисов Николай Андреевич",

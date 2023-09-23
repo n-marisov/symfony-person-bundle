@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5289092a4cac81ab8b221328496f3ae4",
+    "content-hash": "edf75b20dbed75753c9f4fc9610a783f",
     "packages": [
         {
             "name": "doctrine/cache",
@@ -1135,16 +1135,16 @@
         },
         {
             "name": "maris/person-interfaces",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/n-marisov/person-interfaces.git",
-                "reference": "b5edd8bffebff4ab5e8704c3fe1643a73b6dcf49"
+                "reference": "926c2d84060bfd0e5c04f43a2ef1ac337304718f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/n-marisov/person-interfaces/zipball/b5edd8bffebff4ab5e8704c3fe1643a73b6dcf49",
-                "reference": "b5edd8bffebff4ab5e8704c3fe1643a73b6dcf49",
+                "url": "https://api.github.com/repos/n-marisov/person-interfaces/zipball/926c2d84060bfd0e5c04f43a2ef1ac337304718f",
+                "reference": "926c2d84060bfd0e5c04f43a2ef1ac337304718f",
                 "shasum": ""
             },
             "require": {
@@ -1169,9 +1169,9 @@
             "description": "Коллекция интерфейсов для пользователя.",
             "support": {
                 "issues": "https://github.com/n-marisov/person-interfaces/issues",
-                "source": "https://github.com/n-marisov/person-interfaces/tree/v1.0.0"
+                "source": "https://github.com/n-marisov/person-interfaces/tree/v1.0.1"
             },
-            "time": "2023-09-23T06:41:51+00:00"
+            "time": "2023-09-23T06:54:15+00:00"
         },
         {
             "name": "psr/cache",

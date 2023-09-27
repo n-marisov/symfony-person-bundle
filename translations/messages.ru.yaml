@@ -1,0 +1,12 @@
+person:
+  form:
+    surname: 'Фамилия'
+    firstname: 'Имя'
+    patronymic: 'Отчество'
+    birth_date: 'Дата рождения'
+    gender:
+      title: 'Пол'
+      items:
+        unknown: 'Укажите пол'
+        man: 'Мужчина'
+        girl: 'Женщина'

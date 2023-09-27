@@ -48,6 +48,25 @@ class PersonRepository extends ServiceEntityRepository
             $this->getEntityManager()->flush();
     }
 
+    /**
+     * Выбирает персону по части имени фамилии или отчества.
+     * @param string $query
+     * @param array $fields
+     * @param int $maxResult
+     * @return array
+     */
+    public function findLikeName( string $query , array $fields  = ["surname","firstname","patronymic"], int $maxResult = 10 ):array
+    {
+        $builder = $this->createQueryBuilder('p')
+            ->setParameter('query',"%".trim($query)."%")
+            ->setMaxResults( $maxResult );
+
+        foreach ($fields as $field)
+            $builder->orWhere("p.$field LIKE :query");
+
+        return $builder->getQuery()->getResult() ?? [];
+    }
+
     //    /**
 //     * @return TestEntity[] Returns an array of TestEntity objects
 //     */

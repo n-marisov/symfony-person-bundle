@@ -1,0 +1,18 @@
+parameters:
+
+services:
+
+  # Общий репозиторий для всех персон.
+  Maris\Symfony\Person\Repository\PersonRepository:
+    arguments:
+      $registry: '@doctrine'
+
+  # Репозиторий для мужчин.
+  Maris\Symfony\Person\Repository\ManRepository:
+    arguments:
+      $registry: '@doctrine'
+
+  # Репозиторий для женщин.
+  Maris\Symfony\Person\Repository\GirlRepository:
+    arguments:
+      $registry: '@doctrine'

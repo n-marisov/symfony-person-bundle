@@ -2,7 +2,7 @@
   "name": "maris/symfony-person-bundle",
   "description": "Пакет для добавления персоны человека.",
   "license": "MIT",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "minimum-stability": "stable",
   "authors": [
     {

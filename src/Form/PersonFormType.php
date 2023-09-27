@@ -65,5 +65,6 @@ class PersonFormType extends AbstractType
                 'widget' => 'single_text',
                 'input'  => 'datetime_immutable'
             ]);
+        $builder->addViewTransformer( new PersonViewTransformer() );
     }
 }

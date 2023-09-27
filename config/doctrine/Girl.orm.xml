@@ -4,6 +4,6 @@
                           https://symfony.com/schema/dic/doctrine/doctrine-1.0.xsd">
 
     <!-- Модель персоны -->
-    <entity name="Maris\Symfony\Person\Entity\Girl" />
+    <entity name="Maris\Symfony\Person\Entity\Girl" repository-class="Maris\Symfony\Person\Repository\GirlRepository"/>
 
 </doctrine-mapping>

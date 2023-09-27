@@ -4,7 +4,7 @@
                           https://symfony.com/schema/dic/doctrine/doctrine-1.0.xsd">
 
     <!-- Модель персоны -->
-    <entity name="Maris\Symfony\Person\Entity\Person" table="persons" inheritance-type="SINGLE_TABLE" >
+    <entity name="Maris\Symfony\Person\Entity\Person" table="persons" inheritance-type="SINGLE_TABLE" repository-class="Maris\Symfony\Person\Repository\PersonRepository" >
 
         <discriminator-column name="gender" type="string" length="7"/>
 

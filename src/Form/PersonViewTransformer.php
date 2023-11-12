@@ -2,10 +2,8 @@
 
 namespace Maris\Symfony\Person\Form;
 
-use Maris\Symfony\Person\Entity\Girl;
-use Maris\Symfony\Person\Entity\Man;
+use Maris\Symfony\Person\Entity\Gender;
 use Maris\Symfony\Person\Entity\Person;
-use Maris\Symfony\Person\Model\Gender;
 use Symfony\Component\Form\DataTransformerInterface;
 
 /***
@@ -24,11 +22,7 @@ class PersonViewTransformer implements DataTransformerInterface
             'surname' => $value->getSurname(),
             'firstname' => $value->getFirstname(),
             'patronymic' => $value->getPatronymic(),
-            'gender' => match ($value->getGender()){
-                Gender::GIRL => -1,
-                Gender::MAN => 1,
-                default => 0
-            },
+            'gender' => $value->getGender()?->value ?? 0,
             'birthDate' => $value->getBirthDate()
         ];
     }
@@ -51,10 +45,6 @@ class PersonViewTransformer implements DataTransformerInterface
 
     protected function createPersonModel( $gender ):Person
     {
-        return match ( $gender ){
-            1 => new Man(),
-            -1 => new Girl(),
-            default => new Person()
-        };
+        return  (new Person())->setGender( Gender::tryFrom( $gender ));
     }
 }
